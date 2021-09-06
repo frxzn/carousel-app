@@ -74,7 +74,6 @@ const Carousel: React.FC<Props> = ({ data, startIndex }) => {
         getItemLayout={getItemLayout}
         contentContainerStyle={styles.carousel}
         decelerationRate="fast"
-        snapToAlignment="center"
         snapToInterval={IMAGE_WIDTH}
         disableIntervalMomentum
         showsHorizontalScrollIndicator={false}

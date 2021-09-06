@@ -1,4 +1,5 @@
 import React from 'react';
+import { StyleSheet, SafeAreaView } from 'react-native';
 import { Carousel, CenterText } from 'components';
 import { useData } from 'hooks';
 
@@ -16,7 +17,13 @@ const App = () => {
   } else {
     render = <CenterText>Nothing to show</CenterText>;
   }
-  return render;
+  return <SafeAreaView style={styles.root}>{render}</SafeAreaView>;
 };
+
+const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+  },
+});
 
 export default App;
